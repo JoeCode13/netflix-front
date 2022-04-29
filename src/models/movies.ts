@@ -1,5 +1,5 @@
 export interface Movies {
-  results?: ResultsEntity[] | null;
+  results?: (ResultsEntity)[] | null;
   page: number;
   total_results: number;
   dates: Dates;
@@ -15,7 +15,7 @@ export interface ResultsEntity {
   backdrop_path: string;
   original_language: string;
   original_title: string;
-  genre_ids?: number[] | null;
+  genre_ids?: (number)[] | null;
   title: string;
   vote_average: number;
   overview: string;

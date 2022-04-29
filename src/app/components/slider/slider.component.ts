@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Movies } from 'src/models/movies';
+import {Component, Input, OnInit} from '@angular/core';
+import {Movies} from '../../models/movies';
 
 @Component({
   selector: 'app-slider',
@@ -7,15 +7,11 @@ import { Movies } from 'src/models/movies';
   styleUrls: ['./slider.component.scss']
 })
 export class SliderComponent implements OnInit {
+   @Input() sliderConfig;
+   @Input() movies: Movies;
+   @Input() title: string;
 
-  // Inputs
-
-  @Input() sliderConfig: any;
-  @Input() movies?: Movies;
-  @Input() title?: string;
-  
   constructor() { }
-
 
   ngOnInit(): void {
   }
