@@ -1,0 +1,79 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<div class="container">
+    <div class="header">
+        <!-- Banner -->
+        <div class="header__banner">
+            <h2>Title</h2>
+
+            <div class="header__buttons">
+                <button class="play-button">
+                    <mat-icon>arrow_right</mat-icon>
+                    <span>Play</span>
+                </button>
+
+                <button class="more-button">
+                    <mat-icon>info</mat-icon>
+                    <span>More Info</span>
+                </button>
+            </div>
+        </div> <!--END BANNER-->
+
+
+        <!-- Main Area -->
+        <div class="header__main" id="stickyHeader" [class.sticky]="sticky" #stickyHeader>
+
+            <div class="header__left">
+                <a routerLink="/">
+                    <img src="../assets/logo.svg" alt="Logo">
+                </a>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Lastes</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <ul>
+                    <li><a href="#"><mat-icon>search</mat-icon></a></li>
+                    <li><a href="#">Childreb</a></li>
+                    <li><a href="#"><mat-icon>card_giftcard</mat-icon></a></li>
+                    <li><a href="#"><mat-icon>notifications</mat-icon></a></li>
+                    <li>
+                        <img src="#" alt="avatar">
+                    </li>
+                </ul>
+            </div>
+
+        </div> <!--?HEADER MAIN ENDS HERE-->
+
+    </div>
+
+    <div class="body">
+        <app-slider title="Trending" [movies]="trending" [sliderConfig]="sliderConfig"></app-slider>
+        <app-slider title="Top Rated" [movies]="topRated" [sliderConfig]="sliderConfig"></app-slider>
+        <app-slider title="Now Playing" [movies]="nowPlaying" [sliderConfig]="sliderConfig"></app-slider>
+        <app-slider title="Originals" [movies]="originals" [sliderConfig]="sliderConfig"></app-slider>
+        <app-slider title="Popular" [movies]="popular" [sliderConfig]="sliderConfig"></app-slider>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- <router-outlet></router-outlet> -->

@@ -1,0 +1,15 @@
+<h2>{{title}}</h2>
+
+<div class="movie">
+    <div class="movie__images">
+        <div class="thumbnails">
+            <ngx-slick-carousel [config]="sliderConfig" class="carausel">
+                <div class="stick-item" *ngFor="let i of [].constructor(4)">
+                    <h4>IMAGES</h4>
+                </div>
+
+
+            </ngx-slick-carousel>
+        </div>
+    </div>
+</div>
