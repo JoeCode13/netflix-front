@@ -26,10 +26,11 @@ export class AppComponent implements OnInit, OnDestroy {
   nowPlaying?: Movies;
 
   sliderConfig = {
-    slidesToShow: 9,
-    slidesToScroll: 2,
-    arrows: true,
-    autoplay: false,
+    // Cards config
+    slidesToShow: 9, // 9 cards in the screen
+    slidesToScroll: 2, // 2 new Cards on press the button
+    arrows: true, // Button visible
+    autoplay: false, // Function not defined
   };
 
   @ViewChild('stickHeader') header: ElementRef;

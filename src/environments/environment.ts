@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: '249ec27e02c8eb18ff99d48166fcfc80'
+  api: '249ec27e02c8eb18ff99d48166fcfc80' // API FROM themoviedb
 };
 
 /*
@@ -14,4 +14,3 @@ export const environment = {
  * This import should be commented out in production mode because it will have a negative impact
  * on performance if an error is thrown.
  */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
